@@ -1,84 +1,86 @@
 .wrapper {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-    min-width: 100px;
-    background-color: var(--white);
-    padding: 9px 16px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    cursor: pointer;
-    user-select: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  min-width: 100px;
+  background-color: var(--white);
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
 
-    + .wrapper {
-        margin-left: 8px;
-    }
+  + .wrapper {
+    margin-left: 8px;
+  }
 
-    // Disabled
-    &.disabled {
-        opacity: 0.5;
-        pointer-events: none;
-    }
+  // Disabled
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .icon + .title,
 .title + .icon {
-    margin-left: 8px;
+  margin-left: 8px;
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  width: 24px;
 }
 
 // Button types
 .text {
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .rounded {
-    border-radius: 200px;
-    border-color: rgba(22, 24, 35, 0.12);
-    box-shadow: 0 2px 8px rgb(0 0 0 / 0.06);
+  border-radius: 200px;
+  border-color: rgba(22, 24, 35, 0.12);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.06);
 
-    &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        border-color: rgba(22, 24, 35, 0.2);
-    }
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+    border-color: rgba(22, 24, 35, 0.2);
+  }
 }
 
 .primary {
-    color: var(--white);
-    background-color: var(--primary);
-    border-color: var(--primary);
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
 
-    &:hover {
-        background: linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.06),
-                rgba(0, 0, 0, 0.06)
-            ),
-            #fe2c55;
-        border-color: var(--primary);
-    }
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+      #fe2c55;
+    border-color: var(--primary);
+  }
 }
 
 .outline {
-    color: var(--primary);
-    border: 1px solid var(--primary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 
-    &:hover {
-        background-color: rgba(254, 44, 85, 0.06);
-        border: 1px solid var(--primary);
-    }
+  &:hover {
+    background-color: rgba(254, 44, 85, 0.06);
+    border: 1px solid var(--primary);
+  }
 }
 
 // Button sizes
 .small {
-    min-width: 88px;
-    padding: 4px 16px;
+  min-width: 88px;
+  padding: 4px 16px;
 }
 
 .large {
-    min-width: 140px;
-    padding: 14px 16px;
+  min-width: 140px;
+  padding: 14px 16px;
 }
